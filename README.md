@@ -30,7 +30,7 @@ This builds your schema, in order, and then runs any pending migrations.
 
 ```sh
   var createOrdersTable = function () {
-    return db.knex.schema.hasTable('orders')
+    return knex.schema.hasTable('orders')
     .then(function (exists) {
       if (!exists) {
         return knex.schema.createTable('orders', function (order) {
@@ -52,7 +52,7 @@ This builds your schema, in order, and then runs any pending migrations.
   };
 
   var createUsersTable = function () {
-    return db.knex.schema.hasTable('users')
+    return knex.schema.hasTable('users')
     .then(function (exists) {
       if (!exists) {
         return db.knex.schema.createTable('users', function (user) {
