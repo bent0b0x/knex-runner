@@ -15,14 +15,7 @@ Knex commands run asynchronously, so you must write some boilerplate code to ens
       directory: 'my/database/migrations/path'
     }
   }, 
-  schema, 
-  function (error) {
-    if (error) {
-      console.log(':(');
-    } else {
-      console.log('Success!');
-    }
-  });
+  schema);
 ```
 This builds your schema, in order, and then runs any pending migrations.  
 
