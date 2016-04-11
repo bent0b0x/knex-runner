@@ -9,13 +9,14 @@ Knex commands run asynchronously, so you must write some boilerplate code to ens
   var knex-runner = require('knex-runner.js');
 
   knex-runner({
-  client: 'postgres',
-    connection: MY_DATABASE_URL,
-    migrations: {
-      directory: 'my/database/migrations/path'
-    }
-  }, 
-  schema);
+    client: 'postgres',
+      connection: MY_DATABASE_URL,
+      migrations: {
+        directory: 'my/database/migrations/path'
+      }
+    }, 
+    schema
+  );
 ```
 This builds your schema, in order, and then runs any pending migrations.  
 
