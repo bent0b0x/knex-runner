@@ -55,7 +55,7 @@ This builds your schema, in order, and then runs any pending migrations.
     return knex.schema.hasTable('users')
     .then(function (exists) {
       if (!exists) {
-        return db.knex.schema.createTable('users', function (user) {
+        return knex.schema.createTable('users', function (user) {
           user.increments();
           user.string('username', 255).index().unique();
           user.integer('last_order_id').unsigned().references('id').inTable('orders').index();
