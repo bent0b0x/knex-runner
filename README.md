@@ -6,7 +6,7 @@ Knex commands run asynchronously, so you must write some boilerplate code to ens
 ## Usage
 
 ```sh
-  var knex-runner = require('knex-runner.js');
+  var runner = require('knex-runner.js');
 
   knex-runner({
     client: 'postgres',
