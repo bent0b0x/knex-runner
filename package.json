@@ -1,0 +1,27 @@
+{
+  "name": "knex-runner",
+  "version": "1.0.0",
+  "description": "Tiny library for building a knex schema and running migrations",
+  "main": "knex-runner.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bent0b0x/knex-runner.git"
+  },
+  "keywords": [
+    "knex",
+    "migration",
+    "schema"
+  ],
+  "author": "Benjamin Baum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bent0b0x/knex-runner/issues"
+  },
+  "homepage": "https://github.com/bent0b0x/knex-runner#readme",
+  "dependencies": {
+    "knex": "^0.10.0"
+  }
+}
