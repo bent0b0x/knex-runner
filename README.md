@@ -3,6 +3,10 @@ Tiny library for building a knex schema and running migrations
 
 Knex commands run asynchronously, so you must write some boilerplate code to ensure that all of your tables are created in the correct order. This library is that boilerplate code.
 
+## Installation
+
+`$ npm install knex-runner `
+
 ## Usage
 
 ```sh
