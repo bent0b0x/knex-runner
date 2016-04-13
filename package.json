@@ -1,6 +1,6 @@
 {
   "name": "knex-runner",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Tiny library for building a knex schema and running migrations",
   "main": "knex-runner.js",
   "scripts": {
