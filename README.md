@@ -12,7 +12,7 @@ Knex commands run asynchronously, so you must write some boilerplate code to ens
 ```sh
   var runner = require('knex-runner.js');
 
-  knex-runner({
+  runner({
     client: 'postgres',
       connection: MY_DATABASE_URL,
       migrations: {
